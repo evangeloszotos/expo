@@ -17,6 +17,9 @@
   },
   "source_files": "ios/**/*.{h,m,swift,cpp}",
   "requires_arc": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
   "dependencies": {
     "React": [
 

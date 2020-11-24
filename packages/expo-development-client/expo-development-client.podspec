@@ -21,6 +21,9 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,swift,cpp}"
   s.requires_arc = true
 
+  # Swift/Objective-C compatibility
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
+  
   s.dependency "React"
   s.dependency "EXDevMenuInterface"
   # ...
